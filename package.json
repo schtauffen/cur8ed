@@ -3,14 +3,17 @@
   "version": "0.4.0",
   "private": true,
   "dependencies": {
-    "@swyx/hooks": "^0.0.3",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",
     "@types/node-fetch": "^2.1.4",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
+    "apollo-boost": "^0.4.4",
+    "apollo-server-lambda": "^2.9.2",
+    "graphql": "^14.5.4",
     "node-fetch": "^2.3.0",
     "react": "^16.8.0-alpha.0",
+    "react-apollo": "^3.0.1",
     "react-dom": "^16.8.0-alpha.0",
     "react-scripts": "^3.1.1",
     "typescript": "^3.2.2"
