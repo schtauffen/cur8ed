@@ -10,8 +10,13 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Query query={gql`{ hello }`}>
-        {({ data }: any) => <div>Server says: {data.hello}</div>}
+      <Query query={gql`{ hello, dogPhotoUrl }`}>
+        {({ data }: any) => (
+          <div>
+            Server says: {data.hello}<br />
+            <img alt="a dog" src={data.dogPhotoUrl} />
+          </div>
+        )}
       </Query>
     </ApolloProvider>
   );
